@@ -2,7 +2,7 @@
 
 *docker client must be run*
 
-Run at the root path of the project:
+Run at the ./GrpcRandomNumbersClient path of the project:
 
         docker build -t grpcrandomnumbersclient:1.0 ./
 
