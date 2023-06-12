@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcRandomNumbersClient";
+
+package numbers;
+
+import "google/protobuf/struct.proto";
+import "google/protobuf/empty.proto";
+
+// The service definition.
+service Numbers {
+  // Get a number
+  rpc GetNumber (google.protobuf.Empty) returns (NumberReply);
+}
+
+// The response message
+message NumberReply {
+  google.protobuf.Value data = 1;
+}
